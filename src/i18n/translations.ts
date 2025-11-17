@@ -129,7 +129,7 @@ export const translations = {
       },
       pro: {
         name: "Pro",
-        price: "5$",
+        price: "$5",
         period: "/ utilisateur / mois",
         desc: "Pour les petites équipes qui ont besoin d'une protection complète",
         cta: "Obtenir Pro",
