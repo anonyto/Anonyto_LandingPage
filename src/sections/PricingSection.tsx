@@ -72,13 +72,25 @@ export function PricingSection() {
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
                 {t.pricing.pro.name}
               </h3>
-              <div className="flex items-baseline gap-2 mb-1">
-                <span className="text-4xl sm:text-5xl font-bold text-white">
-                  {t.pricing.pro.price}
-                </span>
-                <span className="text-sm sm:text-base text-white/80">
-                  {t.pricing.pro.period}
-                </span>
+              <div className="flex items-end gap-3 mb-1">
+                <div className="flex flex-col">
+                  <span className="text-2xl sm:text-3xl font-bold text-white/50 line-through leading-tight">
+                    $12
+                  </span>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-4xl sm:text-5xl font-bold text-white">
+                      {t.pricing.pro.price}
+                    </span>
+                    <span className="text-sm sm:text-base text-white/80">
+                      {t.pricing.pro.period}
+                    </span>
+                  </div>
+                </div>
+                <div className="mb-2">
+                  <span className="bg-green-500 text-white text-xs sm:text-sm font-bold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full shadow-lg">
+                    -58%
+                  </span>
+                </div>
               </div>
               <p className="text-sm sm:text-base text-white/90">
                 {t.pricing.pro.desc}
